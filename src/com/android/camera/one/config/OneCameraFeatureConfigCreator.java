@@ -146,7 +146,7 @@ public class OneCameraFeatureConfigCreator {
         for (int cap : capabilities) {
             if (cap == CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_PRIVATE_REPROCESSING ||
                     cap == CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_YUV_REPROCESSING) {
-                return true;
+                return false;
             }
         }
         return false;
